@@ -1,5 +1,5 @@
 const express = require('express')
-const db = require('./data/db-config.js')
+// const db = require('./data/db-config.js')
 
 const server = express()
 
@@ -9,4 +9,4 @@ server.get('/', (req, res) => {
     res.json({ senity: 'check'})
 });
 
-exports.module = server
+module.exports = server
